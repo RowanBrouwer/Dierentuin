@@ -4,21 +4,23 @@ using System.Text;
 
 namespace Dierentuin.Classes
 {
-    sealed class Monkey : Animal
+    sealed class Elephant : Animal
     {
         int maxEnergy = 100;
-        int foodUsage = 10;
-        int energyUsage = 2;
+        int foodUsage = 50;
+        int energyUsage = 5;
+        private string name;
+        private int _energy;
 
         public override string Name
         {
             get
             {
-                return Name;
+                return name;
             }
             set
             {
-                Name = value;
+                name = value;
             }
         }
 
@@ -26,11 +28,11 @@ namespace Dierentuin.Classes
         {
             get
             {
-                return energy;
+                return _energy;
             }
             set
             {
-                energy = value;
+                _energy = value;
             }
         }
 
@@ -43,7 +45,7 @@ namespace Dierentuin.Classes
             else
             {
                 return energy + 25;
-            }
+            }  
         }
 
         public override int UseEnergy()

@@ -9,16 +9,18 @@ namespace Dierentuin.Classes
         int maxEnergy = 100;
         int foodUsage = 25;
         int energyUsage = 10;
+        private string name;
+        private int _energy;
 
         public override string Name
         {
             get
             {
-                return Name;
+                return name;
             }
             set
             {
-                Name = value;
+                name = value;
             }
         }
 
@@ -26,11 +28,11 @@ namespace Dierentuin.Classes
         {
             get
             {
-                return energy;
+                return _energy;
             }
             set
             {
-                energy = value;
+                _energy = value;
             }
         }
 
